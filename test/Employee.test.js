@@ -1,35 +1,35 @@
 // Starter file provided by Instructor (03/09/2021) AC
-
 const Employee = require("../lib/Employee");
+const test = new Employee('Brandon', 42, 'brandcarter4@gmail.com');
 
-test("Can instantiate Employee instance", () => {
-
+it("Can instantiate Employee instance", () => {   
+    expect(test instanceof Employee).toBe(true);
 });
 
-test("Can set name via constructor arguments", () => {
-
+it("Can set name via constructor arguments", () => {
+    expect(test.name).toBe('Brandon');
 });
 
-test("Can set id via constructor argument", () => {
-
+it("Can set id via constructor argument", () => {
+    expect(test.id).toBe(42);
 });
 
-test("Can set email via constructor argument", () => {
-
+it("Can set email via constructor argument", () => {
+    expect(test.email).toBe('brandcarter4@gmail.com');
 });
 
-test("Can get name via getName()", () => {
-
+it("Can get name via getName()", () => {
+    expect(test.getName()).toEqual(test.name);
 });
 
-test("Can get id via getId()", () => {
-
+it("Can get id via getId()", () => {
+    expect(test.getId()).toEqual(test.id);
 });
 
-test("Can get email via getEmail()", () => {
-
+it("Can get email via getEmail()", () => {
+    expect(test.getEmail()).toEqual(test.email);
 });
 
-test("getRole() should return \"Employee\"", () => {
-
+it("getRole() should return \"Employee\"", () => {
+    expect(test.getRole()).toBe('Employee');
 });

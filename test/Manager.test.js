@@ -2,15 +2,17 @@
 
 const Manager = require("../lib/Manager");
 const Employee = require("../lib/Employee");
+const { expect } = require("@jest/globals");
+const test = new Manager('whatever', 42, 'whatever@gmail.com', 1337)
 
-test("Can set office number via constructor argument", () => {
-
+it("Can set office number via constructor argument", () => {
+    expect(test.office).toBe(1337)
 });
 
-test('getRole() should return "Manager"', () => {
-
+it('getRole() should return "Manager"', () => {
+    expect(test.getRole()).toBe("Manager")
 });
 
-test("Can get office number via getOffice()", () => {
-
+it("Can get office number via getOffice()", () => {
+    expect(test.getOffice()).toEqual(test.office)
 });

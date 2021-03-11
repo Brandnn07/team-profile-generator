@@ -6,7 +6,7 @@ const { expect } = require("@jest/globals");
 const test = new Manager('whatever', 42, 'whatever@gmail.com', 1337)
 
 it("Can set office number via constructor argument", () => {
-    expect(test.office).toBe(1337)
+    expect(test.officeNumber).toBe(1337)
 });
 
 it('getRole() should return "Manager"', () => {

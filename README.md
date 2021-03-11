@@ -15,7 +15,7 @@ This project is designed to create cards of different members in a project team 
 ## Application
 _______________________________
 
-Here is a [tutorial!](https://drive.google.com/file/d/15JLR2Dgo9tDjIkrFGqrjHWIYKZxHhBO_/view)
+Here is a [tutorial!](https://youtu.be/Qgo60Mm-xEk)
 
 ## Installation 
 _______________________________

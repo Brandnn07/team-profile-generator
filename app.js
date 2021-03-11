@@ -136,7 +136,7 @@ function callEngineer() {
         .then((data) => {
             const addEngineer = new Engineer(data.name, data.id, data.email, data.github);
             arr.push(addEngineer);
-            console.log(addEngineer);
+            // console.log(addEngineer);
             if (data.empAdd === 'Yes! An Engineer') {
                 callEngineer();
             } else if (data.empAdd === 'Yes! An Intern') {
@@ -153,7 +153,7 @@ function callIntern() {
         .then((data) => {
             const addIntern = new Intern(data.name, data.id, data.email, data.school);
             arr.push(addIntern);
-            console.log(addIntern);
+            // console.log(addIntern);
             if (data.empAdd === 'Yes! An Engineer') {
                 callEngineer();
             } else if (data.empAdd === 'Yes! An Intern') {
@@ -170,7 +170,7 @@ function call() {
         .then((data) => {
             const addManager = new Manager(data.name, data.id, data.email, data.officeNumber);
             arr.push(addManager);
-            console.log(addManager);
+            // console.log(addManager);
             if (data.empAdd === 'Yes! An Engineer') {
                 callEngineer();
             } else if (data.empAdd === 'Yes! An Intern') {
